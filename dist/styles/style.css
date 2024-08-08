@@ -721,6 +721,23 @@ figure.effect-dexter:hover p {
   justify-content: space-between !important;
 }
 
+
+.chat div img {
+  height: 100%;
+  width: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.socials div img {
+  border-radius: 50%;
+  opacity: 0.7;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
 .chat-intro {
   align-items: flex-start !important;
   justify-content: space-between !important;
@@ -728,7 +745,9 @@ figure.effect-dexter:hover p {
 }
 
 .chat > div {
-  /* justify-content: space-between !important; */
+ display: flex;
+ align-items: center;
+ justify-content: center;
   background: #2b2b2b;
   border-radius: 12px;
   height: 50%;
@@ -1489,11 +1508,20 @@ body {
   justify-content: center;
 }
 
+.footer-descriptions {
+  margin-right: auto;
+}
+
 .footer-icons a {
   margin: 0 12px;
 }
 
 .footer-icons a svg {
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 30px;
+}
+
+.footer-icons a .svg {
+  height: 50px;
+  width: 50px;
 }
