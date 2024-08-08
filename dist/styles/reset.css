@@ -1,0 +1,37 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 10px;
+	font-family: 'Montserrat', sans-serif;
+	scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(26, 22, 22);
+    position: relative;
+    overflow-x: hidden;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-btn {
+    align-self: flex-start;
+    /* display: flex; */
+    /* justify-content: space-between; */
+}
+.space {
+    height: 100vh;
+    width: 100vw;
+    background-color: transparent;
+    visibility: hidden;
+    z-index: -11;
+    /* display: none;  */
+}

@@ -1,0 +1,222 @@
+<!doctype html>
+<html class="is-smooth-scroll-compatible is-loading" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Mamush bruce</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="theme-color" content="#ffffff">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" sizes="152x152" href="dist/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="dist/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="dist/images/favicons/favicon-16x16.png">
+    <link rel="mask-icon" href="dist/images/favicons/safari-pinned-tab.svg" color="#000000">
+
+    <link rel="stylesheet" href="dist/styles/foundation-icons.min.css">
+    <link rel="stylesheet" href="dist/styles/main.css">
+    <link rel="stylesheet" href="dist/styles/style.css">
+
+    <style>
+        .home-bg #dotsCanvas{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+@media (max-width:1024px) {
+    #dotsCanvas {
+        display: none;
+        visibility: hidden;
+    }
+}
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144274538-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-144274538-1');
+    </script>
+    <!-- <script>
+        var balls = document.getElementsByClassName("ball");
+  document.onmousemove = function(){
+    var x = event.clientX * 100 / window.innerWidth + "%";
+    var y = event.clientY * 100 / window.innerHeight + "%";
+
+    for(var i=0;i<2;i++){
+      balls[i].style.left = x;
+      balls[i].style.top = y;
+      balls[i].style.transform = "translate(-"+x+",-"+y+")";
+    }
+  }
+    </script> -->
+</head>
+
+<body>
+
+    <div class="load_grid">
+        <div class="load_grid-item"></div>
+        <div class="load_grid-item"></div>
+        <div class="load_grid-item"></div>
+        <div class="load_grid-item"></div>
+        <div class="load_grid-item"></div>
+        <div class="load_grid-item"></div>
+        <div class="load_grid-item"></div>
+        <div class="load_grid-item"></div>
+        <div class="load_grid-item"></div>
+        <div class="load_grid-item"></div>
+        <div class="load_grid-item"></div>
+        <div class="load_grid-item"></div>
+        <div class="load_grid-item"></div>
+        <div class="load_grid-item"></div>
+        <div class="load_grid-item"></div>
+        <div class="load_grid-item"></div>
+    </div>
+
+    <div class="o-scrolll-h home-bg" id="js-scroll" data-scroll-container>
+        <nav class="nav">
+            <div class="links">
+                <a href="index.html" class="a link">Home</a>
+                <a href="about.html" class="a link">About</a>
+                <a href="project.html" class="a link">Project</a>
+                <a href="#" class="c link">Contact</a>
+            </div>
+            <div class="underline"></div>
+        </nav>
+        <!-- floating menu -->
+        <div class="center menu">
+            <div id="myMenu"></div>
+        </div>
+
+        <!-- <div class="eye-holder">
+            <div class="eyes">
+                <div class="eye">
+                    <div class="ball">
+                        <img src="./dist/images/eye_img.png">
+                    </div>
+                </div>
+                <div class="eye">
+                    <div class="ball">
+                        <img src="./dist/images/eye_img.png">
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- canvas dots -->
+        <canvas id="dotsCanvas"></canvas>
+
+            <div data-scroll-section>
+                <div class="o-container oh-container">
+                    <header class="c-header" id="header">
+
+
+                        <h1 class="c-header_title o-h1" data-scroll>
+                            <span class="c-header_title_line">
+                                <span data-scroll data-scroll-speed="3" data-scroll-position="top">I'M</span>
+                            </span>
+
+                            <span class="c-header_title_line -version u-white left-title-name">
+                                <span class="o-h1" data-scroll data-scroll-speed="3" data-scroll-position="top"
+                                    data-scroll-delay="0.05">M</span>
+                                <span class="o-h1" data-scroll data-scroll-speed="5" data-scroll-position="top"
+                                    data-scroll-delay="0.05">A</span>
+                                <span class="o-h1" data-scroll data-scroll-speed="2" data-scroll-position="top"
+                                    data-scroll-delay="0.05">M</span>
+                                <span class="o-h1" data-scroll data-scroll-speed="4" data-scroll-position="top"
+                                    data-scroll-delay="0.05">U</span>
+                                <span class="o-h1" data-scroll data-scroll-speed="3" data-scroll-position="top"
+                                    data-scroll-delay="0.05">S</span>
+                                <span class="o-h1" data-scroll data-scroll-speed="5" data-scroll-position="top"
+                                    data-scroll-delay="0.05">H</span>
+                            </span>
+                            <span class="c-header_title_line">
+                                <span data-scroll data-scroll-speed="2" data-scroll-position="top">BRUCE</span>
+                            </span>
+                        </h1>
+                    </header>
+                </div>
+            </div>
+
+
+            <div id="contact">
+
+                <div class="contact-blur back">
+                    <!-- <a href="#" class="back">back</a> -->
+                </div>
+
+                <div class="contact-info">
+
+                    <div class="chat-section">
+                        <div class="chat-intro">
+                          <h1>Let's Talk</h1>
+                          <p>Do you have an idea, project or<br>a question you need help with?</p>
+                        </div>
+                        <div class="chat">
+                          <div class="video"></div>
+                          <div class="connect"></div>
+                        </div>
+                      </div>
+                      <div class="socials">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                      </div>
+                      <div class="start-project">
+                        <div class="start-intro">
+                          <h3>Start a project</h3>
+                        </div>
+                        <form action="">
+                          <div class="name-raw">
+                
+                            <input type="text" name="name" placeholder="YOUR NAME">
+                
+                            <input type="email" name="email" placeholder="YOUR EMAIL">
+                
+                            <input type="text" name="subject" placeholder="YOUR SUBJECT">
+                
+                          </div>
+                          <div class="project-info">
+                            <textarea name="message" placeholder="YOUR MESSAGE"></textarea>
+                            <div type="submit" class="submit">
+                              <!-- <p class="submit-text">Send</p> -->send
+                              <!-- <span class="submit-icon fa fa-send"></span> -->
+                            </div>
+                          </div>
+                        </form>
+                
+                      </div>
+                </div>
+                <div id=particles-js></div>
+            </div>
+
+        </div>
+        </div>
+
+        <script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js"
+            crossorigin="anonymous"></script>
+        <script nomodule
+            src="https://polyfill.io/v3/polyfill.min.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent%2Csmoothscroll"
+            crossorigin="anonymous"></script>
+
+        <script src="dist/scripts/main2.js"></script>
+        <script src="dist/scripts/gsap.min.js"></script>
+        <script src="dist/scripts/jquery.js"></script>
+        <script src="dist/scripts/anime.min.js"></script>
+        <script src="dist/scripts/jquery-ui.js"></script>
+        <script src="dist/scripts/script.js"></script>
+        <script src='dist/scripts/particles.min.js'></script>
+        <script src='dist/scripts/app.js'></script>
+        <script src="dist/scripts/index.js"></script>
+        <script src="./dist/scripts/canvas.js"></script>
+</body>
+
+</html>

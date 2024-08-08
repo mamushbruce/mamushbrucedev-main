@@ -1,0 +1,449 @@
+<!doctype html>
+<html class="is-smooth-scroll-compatible is-loading" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>About me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="theme-color" content="#ffffff">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" sizes="152x152" href="dist/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="dist/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="dist/images/favicons/favicon-16x16.png">
+    <link rel="mask-icon" href="dist/images/favicons/safari-pinned-tab.svg" color="#000000">
+
+    <link rel="stylesheet" href="dist/styles/foundation-icons.min.css">
+    <link rel="stylesheet" href="dist/styles/main.css">
+    <link rel="stylesheet" href="dist/styles/style.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144274538-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-144274538-1');
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const links = document.querySelectorAll('.link');
+            const underline = document.querySelector('.underline');
+
+            links.forEach(link => {
+                link.addEventListener('mouseover', function () {
+                    const linkRect = link.getBoundingClientRect();
+                    const navRect = link.parentNode.getBoundingClientRect();
+
+                    underline.style.width = linkRect.width + 'px';
+                    underline.style.transform = `translateX(${linkRect.left - navRect.left}px)`;
+                });
+
+                link.addEventListener('mouseleave', function () {
+                    const linkRect = link.getBoundingClientRect();
+                    const navRect = link.parentNode.getBoundingClientRect();
+
+                    underline.style.transform = `translateX(${linkRect.left - navRect.left}px)`;
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="load_grid">
+        <div class="load_grid-item"></div>
+        <div class="load_grid-item"></div>
+        <div class="load_grid-item"></div>
+        <div class="load_grid-item"></div>
+        <div class="load_grid-item"></div>
+        <div class="load_grid-item"></div>
+        <div class="load_grid-item"></div>
+        <div class="load_grid-item"></div>
+        <div class="load_grid-item"></div>
+        <div class="load_grid-item"></div>
+        <div class="load_grid-item"></div>
+        <div class="load_grid-item"></div>
+        <div class="load_grid-item"></div>
+        <div class="load_grid-item"></div>
+        <div class="load_grid-item"></div>
+        <div class="load_grid-item"></div>
+    </div>
+
+    <div class="o-scrolll" id="js-scroll" data-scroll-container>
+        <nav class="nav">
+            <div class="links">
+                <a href="index.html" class="a link">Home</a>
+                <a href="about.html" class="a link">About</a>
+                <a href="project.html" class="a link">Project</a>
+                <a href="#" class="c link">Contact</a>
+            </div>
+            <div class="underline"></div>
+        </nav>
+        <!-- floating menu -->
+        <div class="center menu">
+            <div id="myMenu"></div>
+        </div>
+
+        <!-- Contact page -->
+
+        <div id="contact">
+
+            <div class="contact-blur back">
+                <!-- <a href="#" class="back">back</a> -->
+            </div>
+
+            <div class="contact-info">
+
+                <div class="chat-section">
+                    <div class="chat-intro">
+                      <h1>Let's Talk</h1>
+                      <p>Do you have an idea, project or<br>a question you need help with?</p>
+                    </div>
+                    <div class="chat">
+                      <div class="video"></div>
+                      <div class="connect"></div>
+                    </div>
+                  </div>
+                  <div class="socials">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                  <div class="start-project">
+                    <div class="start-intro">
+                      <h3>Start a project</h3>
+                    </div>
+                    <form action="">
+                      <div class="name-raw">
+            
+                        <input type="text" name="name" placeholder="YOUR NAME">
+            
+                        <input type="email" name="email" placeholder="YOUR EMAIL">
+            
+                        <input type="text" name="subject" placeholder="YOUR SUBJECT">
+            
+                      </div>
+                      <div class="project-info">
+                        <textarea name="message" placeholder="YOUR MESSAGE"></textarea>
+                        <div type="submit" class="submit">
+                          <!-- <p class="submit-text">Send</p> -->send
+                          <!-- <span class="submit-icon fa fa-send"></span> -->
+                        </div>
+                      </div>
+                    </form>
+            
+                  </div>
+            </div>
+            <div id=particles-js></div>
+        </div>
+
+        <div data-scroll-section>
+            <div class="o-container">
+                <header class="c-header" id="header">
+
+                    <h1 class="c-header_title o-h1" data-scroll>
+                        <span class="c-header_title_line">
+                            <span data-scroll data-scroll-speed="3" data-scroll-position="top">FIND OUT</span>
+                        </span>
+                        <span class="c-header_title_line">
+                            <span data-scroll data-scroll-speed="2" data-scroll-position="top">ABOUT</span>
+                        </span>
+                        <span class="c-header_title_line -version u-white">
+                            <span class="o-h1" data-scroll data-scroll-speed="3" data-scroll-position="top"
+                                data-scroll-delay="0.05">M</span><span class="o-h1" data-scroll data-scroll-speed="5"
+                                data-scroll-position="top" data-scroll-delay="0.05">E</span>
+                </header>
+            </div>
+        </div>
+
+
+
+        <section class="exp-box" data-scroll-section>
+            <div class="exp" data-scroll data-scroll-direction="horizontal" data-scroll-speed="6">
+                <div class="years" data-scroll data-scroll-delay="0.05">
+                    <h3>4</h3>
+                    <p>years of <span class="block">experience</span></p>
+                </div>
+                <div class="projects-completed" data-scroll data-scroll-speed="9" data-scroll-repeat>
+                    <h3>Hands-on experience in web development projects, ranging from small business websites to complex
+                        websites</h3>
+                </div>
+                <div class="customers" data-scroll data-scroll-direction="verticle" data-scroll-speed="15">
+                    <h2>Keen eye for design and strong focus on functionality and user experience</h2>
+                </div>
+                <div class="profile" data-scroll data-scroll-delay="0.05">
+                    <h3>experience with Docker and cloud computing</h3>
+                </div>
+            </div>
+            <section class="about-details" data-scroll data-scroll-offset="200">
+                <ul>
+                    <li><span class="title">Full name:</span><span class="value">Mamush Bruce Amos Umarmungu</span></li>
+                    <li><span class="title">Age:</span><span class="value">22</span></li>
+                    <li><span class="title">Email:</span><span class="value">mamushbruce@gmail.com</span></li>
+                    <li><span class="title">Tel:</span><span class="value">+256 787 195 121</span></li>
+                    <li><span class="title">Location:</span><span class="value">Uganda, jinja</span></li>
+                </ul>
+            </section>
+        </section>
+
+
+
+
+
+        <section class="exp-box2" data-scroll-section>
+            <div class="exp2" data-scroll data-scroll-direction="horizontal" data-scroll-speed="6">
+                <div class="years2" data-scroll data-scroll-speed="1" data-scroll-offset="200">
+                    <h3>4</h3>
+                    <p>years of <span class="block">experience</span></p>
+                </div>
+                <div class="projects-completed2" data-scroll data-scroll-speed="1" data-scroll-offset="200">
+                    <h3>Hands-on experience in web development projects, ranging from small business websites to complex
+                        websites</h3>
+                </div>
+                <div class="customers2" data-scroll data-scroll-speed="1" data-scroll-offset="200">
+                    <h2>Keen eye for design and strong focus on functionality and user experience</h2>
+                </div>
+                <div class="profile2" data-scroll data-scroll-speed="1" data-scroll-offset="200">
+                    <h3>experience with Docker and cloud computing</h3>
+                </div>
+            </div>
+            <section class="about-details2" data-scroll data-scroll-offset="200">
+                <ul>
+                    <li><span class="title2">Full name:</span><span class="value2">Mamush Bruce Amos Umarmungu</span>
+                    </li>
+                    <li><span class="title2">Age:</span><span class="value2">22</span></li>
+                    <li><span class="title2">Email:</span><span class="value2">mamushbruce@gmail.com</span></li>
+                    <li><span class="title2">Tel:</span><span class="value2">+256 787 195 121</span></li>
+                    <li><span class="title2">Location:</span><span class="value2">Uganda, jinja</span></li>
+                </ul>
+            </section>
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+        <section class="c-section" data-scroll-section>
+            <div class="ol-container" id="lerp-effect">
+                <div class="o-layout">
+                    <div class="o-layout_item u-2/5@from-medium">
+                        <div class="c-section_infos">
+                            <div class="c-section_infos_inner" data-scroll data-scroll-speed="1"
+                                data-scroll-offset="200">
+                                <h3>
+                                    <i></i> <br>
+                                    My Capabilities
+                                </h3>
+                                <div class="c-sections_infos_text u-text">
+                                    <p>
+                                        I have found my way around a few troubles then i came out with more experience
+                                        which i might call the skills
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="o-layout_item u-3/5@from-medium">
+                        <div class="c-lerp-block" data-scroll-direction="verticle">
+                            <span class="c-lerp-block_index" data-scroll data-scroll-delay="0.2" data-scroll-speed="6"
+                                data-scroll-call="dynamicColor" data-scroll-repeat>
+                                <img class="icon" src="dist/img/html.jpeg" alt="html-icon">
+                            </span>
+                            <span class="c-lerp-block_title" data-scroll data-scroll-delay="0.6" data-scroll-speed="6">
+                                <span>
+                                    HTML -
+                                </span>
+                            </span>
+                            <span class="c-lerp-block_title" data-scroll data-scroll-delay="0.6" data-scroll-speed="9">
+                                <span class="capability">
+                                    <!-- great -->
+                                    Expert in crafting semantic structures
+                                </span>
+                            </span>
+                        </div>
+                        <div class="c-lerp-block" data-scroll-direction="verticle">
+                            <span class="c-lerp-block_index" data-scroll data-scroll-delay="0.2" data-scroll-speed="6"
+                                data-scroll-call="dynamicColor" data-scroll-repeat>
+                                <img class="icon" src="dist/img/css.jpg" alt="html-icon">
+                            </span>
+                            <span class="c-lerp-block_title" data-scroll data-scroll-delay="0.6" data-scroll-speed="6">
+                                <span>
+                                    CSS -
+                                </span>
+                            </span>
+                            <span class="c-lerp-block_title" data-scroll data-scroll-delay="1" data-scroll-speed="4">
+                                <span class="capability">
+                                    <!-- creatively -->
+                                    Proficient in designing responsive layouts
+                                </span>
+                            </span>
+                        </div>
+
+                        <div class="c-lerp-block">
+                            <span class="c-lerp-block_index" data-scroll data-scroll-delay="0.06" data-scroll-speed="6"
+                                data-scroll-call="dynamicColor" data-scroll-repeat>
+                                <img class="icon" src="dist/img/javascript.png" alt="html-icon">
+                            </span>
+
+                            <span class="c-lerp-block_title" data-scroll>
+                                <span data-scroll data-scroll-delay="0.13" data-scroll-speed="6">J</span>
+                                <span data-scroll data-scroll-delay="0.12" data-scroll-speed="6">A</span>
+                                <span data-scroll data-scroll-delay="0.11" data-scroll-speed="6">V</span>
+                                <span data-scroll data-scroll-delay="0.1" data-scroll-speed="6">A</span>
+                                <span data-scroll data-scroll-delay="0.09" data-scroll-speed="6">S</span>
+                                <span data-scroll data-scroll-delay="0.08" data-scroll-speed="6">C</span>
+                                <span data-scroll data-scroll-delay="0.07" data-scroll-speed="6">R</span>
+                                <span data-scroll data-scroll-delay="0.06" data-scroll-speed="6">I</span>
+                                <span data-scroll data-scroll-delay="0.05" data-scroll-speed="6">P</span>
+                                <span data-scroll data-scroll-delay="0.05" data-scroll-speed="6">T</span>
+                                <span data-scroll data-scroll-delay="0.1" data-scroll-speed="6">-</span>
+                            </span>
+                            <span class="c-lerp-block_title" data-scroll data-scroll-delay="0.6" data-scroll-speed="6">
+                                <span class="capability">
+                                    <!-- great -->
+                                    Skilled in dynamic, interactive functionality including frameworks
+                                </span>
+                            </span>
+                        </div>
+                        <div class="c-lerp-block">
+                            <span class="c-lerp-block_index" data-scroll data-scroll-delay="0.03" data-scroll-speed="6"
+                                data-scroll-call="dynamicColor" data-scroll-repeat>
+                                <img class="icon" src="dist/img/JavaScript-logo.png" alt="html-icon">
+                            </span>
+                            <span class="c-lerp-block_title" data-scroll data-scroll-delay="0.04" data-scroll-speed="6">
+                                <span>
+                                    Express.JS -
+                                </span>
+                            </span>
+                            <span class="c-lerp-block_title" data-scroll data-scroll-delay="0.1" data-scroll-speed="8">
+                                <span class="capability">
+                                    <!-- Good -->
+                                    Competent in server-side scripting soultions
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="c-section -fixed" data-scroll-section data-persistent>
+            <div class="ol-container" id="fixed-elements">
+                <div class="o-layout">
+                    <div class="o-layout_item u-2/5@from-medium">
+                        <div class="c-section_infos -padding" data-scroll data-scroll-sticky
+                            data-scroll-target="#fixed-elements">
+                            <div class="c-section_infos_inner" data-scroll data-scroll-offset="200">
+                                <h3>
+                                    would <br>
+                                    YOU Like
+                                </h3>
+                                <div class="c-sections_infos_text u-text">
+                                    <p>
+                                        <ul>
+                                            <li>Performance</li>
+                                            <li>Accessibility</li>
+                                            <li>Progressive Web App</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="o-layout_item u-3/5@from-medium">
+                        <div class="c-fixed_wrapper" data-scroll data-scroll-call="dynamicBackground"
+                            data-scroll-repeat>
+                            <div class="c-fixed_target" id="fixed-target"></div>
+                            <!-- <div class="c-fixed" data-scroll data-scroll-sticky data-scroll-target="#fixed-target"
+                                style="background-image:url('dist/images/locomotive04.jpg')"></div> -->
+                            <figure class="effect-dexter c-fixed" data-scroll data-scroll-sticky
+                                data-scroll-target="#fixed-target" style="background-image:url('dist/img/2.jpg')">
+                                <!-- <img src="dist/images/19.jpg" alt="img19" /> -->
+                                <figcaption>
+                                    <h2>Well, <br>
+                                        I Love <span>Extra-Ordinary</span>Work</h2>
+                                    <p>- Passionate about leveraging technology to solve problems and enhance user
+                                        engagement, always striving to stay ahead of the latest industry trends and best
+                                        practices.</p>
+                                    <a class="view-more" href="#">View more</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="c-section" data-scroll-section>
+            <div class="ol-container">
+                <div class="c-cta">
+                    <h1 class="o-title" data-scroll>
+                        <span class="o-title_line">
+                            <span>
+                                <p>If you </p>
+                            </span>
+                        </span>
+                        <span class="o-title_line">
+                            <span>
+                                <p>Enjoyed</p>
+                            </span>
+                        </span>
+                        <span class="o-title_line u-white">
+                            <span>
+                                <p>My Story</p>
+                            </span>
+                        </span>
+                    </h1>
+                    <hr class="c-cta_line" data-scroll data-scroll-offset="100" />
+
+
+                </div>
+                <div class="footer-icons">
+                    <a href="twitter">x</a>
+                    <a href="twitter">
+                        <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="#0F0F0F"/>
+                        <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="#0F0F0F"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" fill="#0F0F0F"/>
+                        </svg>
+                    </a>
+                    <a href="twitter">
+                        <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M23.1117 4.49449C23.4296 2.94472 21.9074 1.65683 20.4317 2.227L2.3425 9.21601C0.694517 9.85273 0.621087 12.1572 2.22518 12.8975L6.1645 14.7157L8.03849 21.2746C8.13583 21.6153 8.40618 21.8791 8.74917 21.968C9.09216 22.0568 9.45658 21.9576 9.70712 21.707L12.5938 18.8203L16.6375 21.8531C17.8113 22.7334 19.5019 22.0922 19.7967 20.6549L23.1117 4.49449ZM3.0633 11.0816L21.1525 4.0926L17.8375 20.2531L13.1 16.6999C12.7019 16.4013 12.1448 16.4409 11.7929 16.7928L10.5565 18.0292L10.928 15.9861L18.2071 8.70703C18.5614 8.35278 18.5988 7.79106 18.2947 7.39293C17.9906 6.99479 17.4389 6.88312 17.0039 7.13168L6.95124 12.876L3.0633 11.0816ZM8.17695 14.4791L8.78333 16.6015L9.01614 15.321C9.05253 15.1209 9.14908 14.9366 9.29291 14.7928L11.5128 12.573L8.17695 14.4791Z" fill="#0F0F0F"/>
+                        </svg>
+                    </a>
+                    <a href="twitter">calendly</a>
+                </div>
+                </div>
+
+
+                <script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js"
+                    crossorigin="anonymous"></script>
+                <script nomodule
+                    src="https://polyfill.io/v3/polyfill.min.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent%2Csmoothscroll"
+                    crossorigin="anonymous"></script>
+
+                <script src="dist/scripts/main2.js"></script>
+                <script src="dist/scripts/gsap.min.js"></script>
+                <script src="dist/scripts/jquery.js"></script>
+                <script src="dist/scripts/anime.min.js"></script>
+        <script src="dist/scripts/jquery-ui.js"></script>
+        <script src="dist/scripts/script.js"></script>
+        <script src='dist/scripts/particles.min.js'></script>
+        <script src='dist/scripts/app.js'></script>
+                <script src="dist/scripts/index.js"></script>
+                <script src="dist/scripts/TweenMax.min.js"></script>
+                <script src="dist/scripts/imagesloaded.pkgd.min.js"></script>
+</body>
+
+</html>

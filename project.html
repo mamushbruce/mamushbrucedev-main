@@ -1,0 +1,902 @@
+<!doctype html>
+<html class="is-smooth-scroll-compatible is-loading" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>My projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="theme-color" content="#ffffff">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" sizes="152x152" href="dist/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="dist/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="dist/images/favicons/favicon-16x16.png">
+    <link rel="mask-icon" href="dist/images/favicons/safari-pinned-tab.svg" color="#000000">
+
+    <link rel="stylesheet" href="dist/styles/foundation-icons.min.css">
+    <link rel="stylesheet" href="dist/styles/main.css">
+    <link rel="stylesheet" href="dist/styles/style.css">
+    <link rel="stylesheet" type="text/css" href="dist/styles/index.css">
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144274538-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-144274538-1');
+    </script>
+    <script>!function () { document.documentElement.className = "js"; var e, t; (t = document.createElement("style")).innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e || alert("Please view this demo in a modern browser that supports CSS Variables.") }();
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const links = document.querySelectorAll('.link');
+            const underline = document.querySelector('.underline');
+
+            links.forEach(link => {
+                link.addEventListener('mouseover', function () {
+                    const linkRect = link.getBoundingClientRect();
+                    const navRect = link.parentNode.getBoundingClientRect();
+
+                    underline.style.width = linkRect.width + 'px';
+                    underline.style.transform = `translateX(${linkRect.left - navRect.left}px)`;
+                });
+
+                link.addEventListener('mouseleave', function () {
+                    const linkRect = link.getBoundingClientRect();
+                    const navRect = link.parentNode.getBoundingClientRect();
+
+                    underline.style.transform = `translateX(${linkRect.left - navRect.left}px)`;
+                });
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="load_grid">
+        <div class="load_grid-item"></div>
+        <div class="load_grid-item"></div>
+        <div class="load_grid-item"></div>
+        <div class="load_grid-item"></div>
+        <div class="load_grid-item"></div>
+        <div class="load_grid-item"></div>
+        <div class="load_grid-item"></div>
+        <div class="load_grid-item"></div>
+        <div class="load_grid-item"></div>
+        <div class="load_grid-item"></div>
+        <div class="load_grid-item"></div>
+        <div class="load_grid-item"></div>
+        <div class="load_grid-item"></div>
+        <div class="load_grid-item"></div>
+        <div class="load_grid-item"></div>
+        <div class="load_grid-item"></div>
+    </div>
+
+    <div class="o-scrolll" id="js-scroll" data-scroll-container>
+        <nav class="nav">
+            <div class="links">
+                <a href="index.html" class="a link">Home</a>
+                <a href="about.html" class="a link">About</a>
+                <a href="project.html" class="a link">Project</a>
+                <a href="#" class="c link">Contact</a>
+            </div>
+            <div class="underline"></div>
+        </nav>
+        <!-- floating menu -->
+        <div class="center menu">
+            <div id="myMenu"></div>
+        </div>
+
+        <div id="contact">
+
+            <div class="contact-blur back">
+                <!-- <a href="#" class="back">back</a> -->
+            </div>
+
+            <div class="contact-info">
+
+                <div class="chat-section">
+                    <div class="chat-intro">
+                      <h1>Let's Talk</h1>
+                      <p>Do you have an idea, project or<br>a question you need help with?</p>
+                    </div>
+                    <div class="chat">
+                      <div class="video"></div>
+                      <div class="connect"></div>
+                    </div>
+                  </div>
+                  <div class="socials">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                  <div class="start-project">
+                    <div class="start-intro">
+                      <h3>Start a project</h3>
+                    </div>
+                    <form action="">
+                      <div class="name-raw">
+            
+                        <input type="text" name="name" placeholder="YOUR NAME">
+            
+                        <input type="email" name="email" placeholder="YOUR EMAIL">
+            
+                        <input type="text" name="subject" placeholder="YOUR SUBJECT">
+            
+                      </div>
+                      <div class="project-info">
+                        <textarea name="message" placeholder="YOUR MESSAGE"></textarea>
+                        <div type="submit" class="submit">
+                          <!-- <p class="submit-text">Send</p> -->send
+                          <!-- <span class="submit-icon fa fa-send"></span> -->
+                        </div>
+                      </div>
+                    </form>
+            
+                  </div>
+            </div>
+            <div id=particles-js></div>
+        </div>
+
+
+        <div data-scroll-section>
+            <div class="o-container">
+                <header class="c-header" id="header">
+
+                    <h1 class="c-header_title o-h1" data-scroll>
+                        <span class="c-header_title_line">
+                            <span data-scroll data-scroll-speed="3" data-scroll-position="top">view</span>
+                        </span>
+                        <span class="c-header_title_line">
+                            <span data-scroll data-scroll-speed="2" data-scroll-position="top">My</span>
+                        </span>
+                        <span class="c-header_title_line -version u-white">
+                            <span class="o-h1" data-scroll data-scroll-speed="3" data-scroll-position="top"
+                                data-scroll-delay="0.05">P</span>
+                            <span class="o-h1" data-scroll data-scroll-speed="5" data-scroll-position="top"
+                                data-scroll-delay="0.05">R</span>
+                            <span class="o-h1" data-scroll data-scroll-speed="2" data-scroll-position="top"
+                                data-scroll-delay="0.05">O</span>
+                            <span class="o-h1" data-scroll data-scroll-speed="5" data-scroll-position="top"
+                                data-scroll-delay="0.05">-</span>
+                        </span>
+                        <span class="c-header_title_line -version u-white">
+                            <!-- <span class="o-h1" data-scroll data-scroll-speed="3" data-scroll-position="top"
+                                data-scroll-delay="0.05">P</span>
+                            <span class="o-h1" data-scroll data-scroll-speed="5" data-scroll-position="top"
+                                data-scroll-delay="0.05">R</span>
+                            <span class="o-h1" data-scroll data-scroll-speed="2" data-scroll-position="top"
+                                data-scroll-delay="0.05">O</span> -->
+                            <span class="o-h1" data-scroll data-scroll-speed="4" data-scroll-position="top"
+                                data-scroll-delay="0.05">J</span>
+                            <span class="o-h1" data-scroll data-scroll-speed="3" data-scroll-position="top"
+                                data-scroll-delay="0.05">E</span>
+                            <span class="o-h1" data-scroll data-scroll-speed="5" data-scroll-position="top"
+                                data-scroll-delay="0.05">C</span>
+                            <span class="o-h1" data-scroll data-scroll-speed="2" data-scroll-position="top"
+                                data-scroll-delay="0.05">T</span>
+                            <span class="o-h1" data-scroll data-scroll-speed="4" data-scroll-position="top"
+                                data-scroll-delay="0.05">S</span>
+                        </span>
+                    </h1>
+                    <!-- <hr class="c-header_line" data-scroll data-scroll-offset="100" />
+                    <a class="c-header_logo" href="https://locomotive.ca" target="_blank">
+                        <svg role="img">
+                            <use xlink:href="dist/images/sprite.svg#logo"></use>
+                        </svg>
+                    </a> -->
+                    <div class="project-header">
+                        <video src="./dist/video/header.mp4" defer autoplay muted loop></video>
+                    </div>
+                </header>
+            </div>
+        </div>
+
+
+
+        <section class="c-section" data-scroll-section>
+            <div class="ol-container" id="speed-control">
+                <div class="o-layout -gutter">
+                    <div class="o-layout_item u-2/5@from-medium">
+                        <div class="c-section_infos -padding" data-scroll data-scroll-speed="-2"
+                            data-scroll-call="test">
+                            <div class="c-section_infos_inner" data-scroll data-scroll-offset="200">
+                                <h3>
+                                    UX UI
+                                </h3>
+                                <div class="c-sections_infos_text u-text">
+                                    <p>
+                                        I create intuitive, engaging and visually appealing user interfaces,<br>
+                                        prioritizing user needs through research, prototyping, and collaboration with
+                                        cross-functional teams
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="o-layout_item u-3/5@from-medium">
+                        <div class="c-speed-block" data-scroll data-scroll-speed="2">
+                            <div class="o-image_wrapper" data-scroll
+                                data-scroll-repeat>
+                                <div class="o-image" data-scroll>
+                                    <img class="c-speed-block_image" src="dist/images/project-4.jpg"
+                                        alt="Locomotive image from unsplash">
+                                </div>
+                            </div>
+                            <p class="c-speed-block_title" data-scroll>
+                                Website ui
+                            </p>
+                            <!-- <span class="c-speed-block_bubble" data-scroll data-scroll-speed="4"
+                                data-scroll-call="dynamicColor" data-scroll-repeat>
+                                4x
+                            </span> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="o-layout -gutter -bottom">
+                    <div class="o-layout_item u-2/5@from-medium">
+                        <div class="c-speed-block" data-scroll data-scroll-speed="4">
+                            <div class="o-image_wrapper" data-scroll 
+                                data-scroll-repeat>
+                                <div class="o-image" data-scroll data-scroll-speed="-1.5">
+                                    <img class="c-speed-block_image" src="dist/images/project-5.jpg"
+                                        alt="Locomotive image from unsplash">
+                                </div>
+                            </div>
+                            <p class="c-speed-block_title" data-scroll>
+
+                                Mobile app
+                            </p>
+                            <!-- <span class="c-speed-block_bubble -right" data-scroll data-scroll-speed="1"
+                                data-scroll-call="dynamicColor" data-scroll-repeat>
+                                1x
+                            </span>
+                            <span class="c-speed-block_bubble -left -bottom" data-scroll data-scroll-speed="3"
+                                data-scroll-call="dynamicColor" data-scroll-repeat>
+                                3x
+                            </span> -->
+                        </div>
+                    </div>
+                    <div class="o-layout_item u-3/5@from-medium">
+                        <div class="o-layout u-text-right">
+                            <div class="o-layout_item u-1/2@from-medium">
+                                <div class="c-speed-block -margin" data-scroll data-scroll-speed="6">
+                                    <div class="o-image_wrapper" data-scroll 
+                                        data-scroll-repeat>
+                                        <div class="o-image" data-scroll data-scroll-speed="-2">
+                                            <img class="c-speed-block_image" src="dist/images/project-6.jpg"
+                                                alt="Locomotive image from unsplash">
+                                        </div>
+                                    </div>
+                                    <p class="c-speed-block_title" data-scroll>
+                                        Dashbord ui
+                                    </p>
+                                    <!-- <span class="c-speed-block_bubble -left -top" data-scroll data-scroll-speed="2"
+                                        data-scroll-call="dynamicColor" data-scroll-repeat>
+                                        2x
+                                    </span>
+                                    <span class="c-speed-block_bubble -right" data-scroll data-scroll-speed="6"
+                                        data-scroll-call="dynamicColor" data-scroll-repeat>
+                                        6x
+                                    </span>
+                                    <span class="c-speed-block_bubble -left -bottom" data-scroll data-scroll-speed="9"
+                                        data-scroll-call="dynamicColor" data-scroll-repeat>
+                                        9x
+                                    </span> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="c-section" data-scroll-section>
+            <div class="ol-container" id="scroll-direction">
+                <div class="c-direction-block_wrapper">
+                    <div class="c-section_infos -padding" data-scroll data-scroll-sticky
+                        data-scroll-target="#scroll-direction">
+                        <div class="c-section_infos_inner" data-scroll>
+                            <h3>
+                                View all projects
+                            </h3>
+                            <div class="c-sections_infos_text u-text">
+                                <p>
+                                    <a href="#">View</a> a more detailed list of the projects in their categories.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="c-direction-block" id="direction">
+
+
+
+
+
+                        <div class="body">
+                            <div class="wrapping">
+                                <div class="content">
+                                    <h2 class="content__title"> <span class="content__title-line content__title-line--1"
+                                            data-splitting="">Mamush</span> <span
+                                            class="content__title-line content__title-line--2"
+                                            data-splitting="">Bruce</span> </h2>
+                                    <div class="grid">
+                                        
+                                        <a href="#preview-3" class="grid__item pos-3" data-title="Hover-Effect">
+                                            <div class="grid__item-img"
+                                                style="background-image:url(dist/3.png)">
+                                            </div>
+                                        </a>
+                                        <a href="#preview-4" class="grid__item pos-4" data-title="Grid-Animation">
+                                            <div class="grid__item-img"
+                                                style="background-image:url(dist/4.png)">
+                                            </div>
+                                        </a>
+                                        <a href="#preview-5" class="grid__item pos-5" data-title="gallery-Concept">
+                                            <div class="grid__item-img"
+                                                style="background-image:url(dist/5.png)">
+                                            </div>
+                                        </a>
+                                        
+                                        <a href="#preview-7" class="grid__item pos-7" data-title="Page-Transitions">
+                                            <div class="grid__item-img"
+                                                style="background-image:url(dist/10.png)">
+                                            </div>
+                                        </a>
+                                        <a href="#preview-8" class="grid__item pos-8" data-title="Proximity">
+                                            <div class="grid__item-img"
+                                                style="background-image:url(dist/8.png)">
+                                            </div>
+                                        </a>
+                                        <a href="#preview-9" class="grid__item pos-9" data-title="Sidebar-Transition">
+                                            <div class="grid__item-img"
+                                                style="background-image:url(dist/9.png)">
+                                            </div>
+                                        </a>
+                                        
+                                        <a href="#preview-11" class="grid__item pos-11" data-title="Scroll-reflection">
+                                            <div class="grid__item-img"
+                                                style="background-image:url(dist/11.png)">
+                                            </div>
+                                        </a>
+                                        
+                                        <a href="#preview-13" class="grid__item pos-13" data-title="Infinite-menu">
+                                            <div class="grid__item-img"
+                                                style="background-image:url(dist/7.png)">
+                                            </div>
+                                        </a>
+                                        <a href="#preview-14" class="grid__item pos-14" data-title="SlideShow">
+                                            <div class="grid__item-img"
+                                                style="background-image:url(dist/12.png)">
+                                            </div>
+                                        </a>
+                                        <a href="#preview-15" class="grid__item pos-15" data-title="Button-Hover">
+                                            <div class="grid__item-img"
+                                                style="background-image:url(dist/1.png)">
+                                            </div>
+                                        </a>
+                                        <a href="#preview-16" class="grid__item pos-16" data-title="image-Trail">
+                                            <div class="grid__item-img"
+                                                style="background-image:url(dist/6.png)">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="preview">
+                                        <div class="preview__item" id="preview-1">
+                                            <button class="preview__item-back unbutton"><span>Back</span></button>
+                                            <div class="preview__item-imgwrap">
+                                                <div class="preview__item-img"
+                                                    style="background-image:url(dist/1.f450af6d.jpg)">
+                                                </div>
+                                            </div>
+                                            <h2 data-splitting="" class="preview__item-title">First Project</h2>
+                                            <div class="preview__item-content">
+                                                <!-- <div class="preview__item-meta"><span>Acapulco,
+                                                        Mexico</span><span>15/05/2025</span></div> -->
+                                                <p class="preview__item-description">Had a barney with the inlaws a bit
+                                                    miffed pigeons in
+                                                    Trafalgar Square nigh on't goggle box chav hard cheese old boy,
+                                                    marvelous Moriarty
+                                                    pulled a
+                                                    right corker squiffy fork out, a tad stupendous chaps doing my head
+                                                    in
+                                                    ee bah gum.</p>
+                                                <!-- <button class="preview__item-info unbutton">+ Info</button> -->
+                                                    <button 
+                                                    class="preview__item-button">view</button>
+                                            </div>
+                                        </div>
+                                        <div class="preview__item" id="preview-2"> <button
+                                                class="preview__item-back unbutton"><span>Back</span></button>
+                                            <div class="preview__item-imgwrap">
+                                                <div class="preview__item-img"
+                                                    style="background-image:url(dist/2.f8cbed21.jpg)"></div>
+                                            </div>
+                                            <h2 data-splitting="" class="preview__item-title">Procody X</h2>
+                                            <div class="preview__item-content">
+                                                <!-- <div class="preview__item-meta"><span>Bangkok,
+                                                        Thailand</span><span>22/02/2025</span></div> -->
+                                                <p class="preview__item-description">Houlligan pants pork dripping
+                                                    Moriarty
+                                                    ponce knackered
+                                                    wind
+                                                    up treacle lad bugger, ridicule mince pies ridiculous knackered
+                                                    munta9
+                                                    tosser sorted it
+                                                    <!-- nonsense. Completely.</p> <button
+                                                    class="preview__item-info unbutton">+
+                                                    Info</button> -->
+                                                <button class="preview__item-button">view</button>
+                                            </div>
+                                        </div>
+                                        <div class="preview__item" id="preview-3"> <button
+                                                class="preview__item-back unbutton"><span>Back</span></button>
+                                            <div class="preview__item-imgwrap">
+                                                <div class="preview__item-img"
+                                                    style="background-image:url(dist/3f.png)"></div>
+                                            </div>
+                                            <h2 data-splitting="" class="preview__item-title">Hover Ideas</h2>
+                                            <div class="preview__item-content">
+                                                <!-- <div class="preview__item-meta"><span>Berlin,
+                                                        Germany</span><span>16/05/2025</span></div> -->
+                                                <p class="preview__item-description">from basic to advanced image hover effect ideas to inspire your creativity including state of the art animations.
+                                                </p>
+                                                     <!-- <button class="preview__item-info unbutton">+
+                                                    Info</button> -->
+                                                <button class="preview__item-button">view</button>
+                                            </div>
+                                        </div>
+                                        <div class="preview__item" id="preview-4"> <button
+                                                class="preview__item-back unbutton"><span>Back</span></button>
+                                            <div class="preview__item-imgwrap">
+                                                <div class="preview__item-img"
+                                                    style="background-image:url(dist/4f.png)"></div>
+                                            </div>
+                                            <h2 data-splitting="" class="preview__item-title">Grids</h2>
+                                            <div class="preview__item-content">
+                                                <!-- <div class="preview__item-meta"><span>Berlin,
+                                                        Germany</span><span>26/06/2025</span></div> -->
+                                                <p class="preview__item-description">view the latest and funkiest grid loading animations. the presets include.
+
+                                                    <!-- chaps, Sherlock the lakes a right royal knees up.</p> <button
+                                                    class="preview__item-info unbutton">+ Info</button>  -->
+                                                     <button
+                                                    class="preview__item-button">view</button>
+                                            </div>
+                                        </div>
+                                        <div class="preview__item" id="preview-5"> <button
+                                                class="preview__item-back unbutton"><span>Back</span></button>
+                                            <div class="preview__item-imgwrap">
+                                                <div class="preview__item-img"
+                                                    style="background-image:url(dist/5f.png)"></div>
+                                            </div>
+                                            <h2 data-splitting="" class="preview__item-title"> Gallery</h2>
+                                            <div class="preview__item-content">
+                                                <!-- <div class="preview__item-meta"><span>Lisbon,
+                                                        Portugal</span><span>09/12/2025</span></div> -->
+                                                <p class="preview__item-description">art galleries always stun when they are displayed on walls but check out this digital version which you can just view with your mouse movement.
+                                                </p> 
+                                                    <!-- <button
+                                                    class="preview__item-info unbutton">+
+                                                    Info</button> -->
+                                                     <button class="preview__item-button">view</button>
+                                            </div>
+                                        </div>
+                                        <div class="preview__item" id="preview-6"> <button
+                                                class="preview__item-back unbutton"><span>Back</span></button>
+                                            <div class="preview__item-imgwrap">
+                                                <div class="preview__item-img"
+                                                    style="background-image:url(dist/6.f9aff4e5.jpg)"></div>
+                                            </div>
+                                            <h2 data-splitting="" class="preview__item-title">Ruthfull</h2>
+                                            <div class="preview__item-content">
+                                                <!-- <div class="preview__item-meta"><span>Berlin,
+                                                        Germany</span><span>21/08/2025</span></div> -->
+                                                <p class="preview__item-description">And her Majesty's pleasure on his
+                                                    bill
+                                                    sausage roll off
+                                                    with her head squirrel baffled Shakespeare, stiff upper lip damn 'ar
+                                                    kid
+                                                    a cracking and
+                                                    thus. Jolly hockey sticks chinwag penny-dreadful stupendous indeed.
+                                                </p>
+                                                <!-- <button class="preview__item-info unbutton">+ Info</button> --> 
+                                                    <button
+                                                    class="preview__item-button">view</button>
+                                            </div>
+                                        </div>
+                                        <div class="preview__item" id="preview-7"> <button
+                                                class="preview__item-back unbutton"><span>Back</span></button>
+                                            <div class="preview__item-imgwrap">
+                                                <div class="preview__item-img"
+                                                    style="background-image:url(dist/10f.png)"></div>
+                                            </div>
+                                            <h2 data-splitting="" class="preview__item-title">Transitions</h2>
+                                            <div class="preview__item-content">
+                                                <!-- <div class="preview__item-meta"><span>Madrid,
+                                                        Spain</span><span>18/010/2025</span></div> -->
+                                                <p class="preview__item-description">Do you like it when your pages just flow in and flow out. check out all the presets there to offer.
+                                                </p>
+                                                <!-- <button class="preview__item-info unbutton">+ Info</button> -->
+                                                     <button
+                                                    class="preview__item-button">view</button>
+                                            </div>
+                                        </div>
+                                        <div class="preview__item" id="preview-8"> <button
+                                                class="preview__item-back unbutton"><span>Back</span></button>
+                                            <div class="preview__item-imgwrap">
+                                                <div class="preview__item-img"
+                                                    style="background-image:url(dist/8f.png)"></div>
+                                            </div>
+                                            <h2 data-splitting="" class="preview__item-title">Proximity</h2>
+                                            <div class="preview__item-content">
+                                                <!-- <div class="preview__item-meta"><span>Berlin,
+                                                        Germany</span><span>03/09/2025</span></div> -->
+                                                <p class="preview__item-description">modern and subdle proximity effect which can be used for information and slick look effect too. check it out.
+
+                                                </p> <button class="preview__item-info unbutton">+ Info</button> <button
+                                                    class="preview__item-button">view</button>
+                                            </div>
+                                        </div>
+                                        <div class="preview__item" id="preview-9"> <button
+                                                class="preview__item-back unbutton"><span>Back</span></button>
+                                            <div class="preview__item-imgwrap">
+                                                <div class="preview__item-img"
+                                                    style="background-image:url(dist/9f.png)"></div>
+                                            </div>
+                                            <h2 data-splitting="" class="preview__item-title">Sidebars</h2>
+                                            <div class="preview__item-content">
+                                                <!-- <div class="preview__item-meta"><span>London, United
+                                                        Kingdom</span><span>16/01/2025</span>
+                                                </div> -->
+                                                <p class="preview__item-description">Slide, push, reveal, scale, rotate, morph, 3D effects, parallax, subtle shadows, overlay gradients.</p>
+                                                     <!-- <button class="preview__item-info unbutton">+
+                                                    Info</button> -->
+                                                     <button class="preview__item-button">view</button>
+                                            </div>
+                                        </div>
+                                        <div class="preview__item" id="preview-10"> <button
+                                                class="preview__item-back unbutton"><span>Back</span></button>
+                                            <div class="preview__item-imgwrap">
+                                                <div class="preview__item-img"
+                                                    style="background-image:url(dist/10.d2723723.jpg)"></div>
+                                            </div>
+                                            <h2 data-splitting="" class="preview__item-title">Resson</h2>
+                                            <div class="preview__item-content">
+                                                <!-- <div class="preview__item-meta"><span>Vienna,
+                                                        Austria</span><span>12/03/2025</span></div> -->
+                                                <p class="preview__item-description">The chippy tally-ho The Hounds of
+                                                    Baskerville pot
+                                                    noodle
+                                                    'ar kid conked him one on the nose fancy a cuppa bowler hat doing my
+                                                    nut
+                                                    in black cab,
+                                                    trouble and strife sausage roll damn conked him one on the nose
+                                                    ponce.
+                                                </p> 
+                                                <!-- <button class="preview__item-info unbutton">+ Info</button>  -->
+                                                <button
+                                                    class="preview__item-button">view</button>
+                                            </div>
+                                        </div>
+                                        <div class="preview__item" id="preview-11"> <button
+                                                class="preview__item-back unbutton"><span>Back</span></button>
+                                            <div class="preview__item-imgwrap">
+                                                <div class="preview__item-img"
+                                                    style="background-image:url(dist/11f.png)"></div>
+                                            </div>
+                                            <h2 data-splitting="" class="preview__item-title">Reflections</h2>
+                                            <div class="preview__item-content">
+                                                <!-- <div class="preview__item-meta"><span>Berlin,
+                                                        Germany</span><span>22/08/2025</span></div> -->
+                                                <p class="preview__item-description">Do you like to have your text reflect on the top of the browser, then check out this new and incredible sample.</p> 
+                                                    <!-- <button class="preview__item-info unbutton">+
+                                                    Info</button>  -->
+                                                    <button class="preview__item-button">view</button>
+                                            </div>
+                                        </div>
+                                        <div class="preview__item" id="preview-12"> <button
+                                                class="preview__item-back unbutton"><span>Back</span></button>
+                                            <div class="preview__item-imgwrap">
+                                                <div class="preview__item-img"
+                                                    style="background-image:url(dist/12.c107ec1c.jpg)"></div>
+                                            </div>
+                                            <h2 data-splitting="" class="preview__item-title">Twinhouse</h2>
+                                            <div class="preview__item-content">
+                                                <!-- <div class="preview__item-meta"><span>Berlin,
+                                                        Germany</span><span>29/07/2025</span></div> -->
+                                                <p class="preview__item-description">Collywobbles completely starkers
+                                                    221B
+                                                    Baker Street
+                                                    terribly
+                                                    round our gaff Shakespeare a tad, driving a mini have a gander could
+                                                    be
+                                                    a bit of a git
+                                                    nose
+                                                    rag. Cornish pasty old girl up the duff ey up every.</p> 
+                                                    <!-- <button
+                                                    class="preview__item-info unbutton">+ Info</button>  -->
+                                                    <button
+                                                    class="preview__item-button">view</button>
+                                            </div>
+                                        </div>
+                                        <div class="preview__item" id="preview-13"> <button
+                                                class="preview__item-back unbutton"><span>Back</span></button>
+                                            <div class="preview__item-imgwrap">
+                                                <div class="preview__item-img"
+                                                    style="background-image:url(dist/7f.png)"></div>
+                                            </div>
+                                            <h2 data-splitting="" class="preview__item-title">Infinite-menu</h2>
+                                            <div class="preview__item-content">
+                                                <!-- <div class="preview__item-meta"><span>Sydney,
+                                                        Australia</span><span>19/07/2025</span></div> -->
+                                                <p class="preview__item-description">have you ever thought of an effect on the menu that just keeps it scrolling. this preset adds animation to it.</p> 
+                                                    <!-- <button
+                                                    class="preview__item-info unbutton">+
+                                                    Info</button>  -->
+                                                    <button class="preview__item-button">view</button>
+                                            </div>
+                                        </div>
+                                        <div class="preview__item" id="preview-14"> <button
+                                                class="preview__item-back unbutton"><span>Back</span></button>
+                                            <div class="preview__item-imgwrap">
+                                                <div class="preview__item-img"
+                                                    style="background-image:url(dist/12f.png)"></div>
+                                            </div>
+                                            <h2 data-splitting="" class="preview__item-title"> SlideShows</h2>
+                                            <div class="preview__item-content">
+                                                <!-- <div class="preview__item-meta"><span>Paris,
+                                                        France</span><span>22/06/2025</span></div> -->
+                                                <p class="preview__item-description">fully extar-ordinary slideshow transitions and animations, If this is something you might be interested in then be stanned as you check them out.</p>
+                                                <!-- <button class="preview__item-info unbutton">+ Info</button> -->
+                                                 <button
+                                                    class="preview__item-button">view</button>
+                                            </div>
+                                        </div>
+                                        <div class="preview__item" id="preview-15"> <button
+                                                class="preview__item-back unbutton"><span>Back</span></button>
+                                            <div class="preview__item-imgwrap">
+                                                <div class="preview__item-img"
+                                                    style="background-image:url(dist/1f.png)"></div>
+                                            </div>
+                                            <h2 data-splitting="" class="preview__item-title">Button Hover</h2>
+                                            <div class="preview__item-content">
+                                                <!-- <div class="preview__item-meta"><span>Belgrade,
+                                                        Serbia</span><span>04/11/2025</span></div> -->
+                                                <p class="preview__item-description">Glowing neon outlines, subtle geometric overlays, spinning gradients, expanding ripples, morphing shapes, pulsating shadows.
+                                                </p> 
+                                                    <!-- <button class="preview__item-info unbutton">+
+                                                    Info</button> -->
+                                                <button class="preview__item-button">view</button>
+                                            </div>
+                                        </div>
+                                        <div class="preview__item" id="preview-16"> <button
+                                                class="preview__item-back unbutton"><span>Back</span></button>
+                                            <div class="preview__item-imgwrap">
+                                                <div class="preview__item-img"
+                                                    style="background-image:url(dist/6f.png)"></div>
+                                            </div>
+                                            <h2 data-splitting="" class="preview__item-title">Image Trail</h2>
+                                            <div class="preview__item-content">
+                                                <!-- <div class="preview__item-meta"><span>Moscow,
+                                                        Russia</span><span>10/08/2025</span></div> -->
+                                                <p class="preview__item-description">if you ever saw images trailing the mouse, modern and classic twist and animations to it.</p>
+                                                <!-- <button class="preview__item-info unbutton">+ Info</button>  -->
+                                                <button
+                                                    class="preview__item-button">view</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="c-direction-block_item -five">
+                            <span class="c-direction-block_item_inner" data-scroll data-scroll-direction="horizontal"
+                                data-scroll-speed="-20" data-scroll-target="#direction" data-scroll-delay="0.05">
+                                Start a Project!!!!
+                            </span>
+                        </div>
+                        <section class="v-section"> 
+                            <div class="vid-box">
+                                <video src="./dist/video/showcase.mp4" autoplay muted loop playsinline></video>
+                            </div>
+                        </section> 
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <svg class="hidden">
+                    <symbol id="icon-arrow" viewBox="0 0 24 24">
+                        <title>arrow</title>
+                        <polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 " />
+                    </symbol>
+                    <symbol id="icon-drop" viewBox="0 0 24 24">
+                        <title>drop</title>
+                        <path
+                            d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z" />
+                        <path
+                            d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z" />
+                    </symbol>
+                    <symbol id="icon-cross" viewBox="0 0 24 24">
+                        <title>cross</title>
+                        <path
+                            d="M 5.5,2.5 C 5.372,2.5 5.244,2.549 5.146,2.646 L 2.646,5.146 C 2.451,5.341 2.451,5.659 2.646,5.854 L 8.793,12 2.646,18.15 C 2.451,18.34 2.451,18.66 2.646,18.85 L 5.146,21.35 C 5.341,21.55 5.659,21.55 5.854,21.35 L 12,15.21 18.15,21.35 C 18.24,21.45 18.37,21.5 18.5,21.5 18.63,21.5 18.76,21.45 18.85,21.35 L 21.35,18.85 C 21.55,18.66 21.55,18.34 21.35,18.15 L 15.21,12 21.35,5.854 C 21.55,5.658 21.55,5.342 21.35,5.146 L 18.85,2.646 C 18.66,2.451 18.34,2.451 18.15,2.646 L 12,8.793 5.854,2.646 C 5.756,2.549 5.628,2.5 5.5,2.5 Z" />
+                    </symbol>
+                    <symbol id="icon-menu" viewBox="0 0 24 24">
+                        <title>menu</title>
+                        <path
+                            d="M23.8,6H0.1V3h23.7C23.8,3,23.8,6,23.8,6z M23.8,10.5H0.1v3h23.7C23.8,13.5,23.8,10.5,23.8,10.5z M24,18H10v3h14V18z" />
+                    </symbol>
+                    <!-- Magnifier by Gregor Cresnar https://www.flaticon.com/authors/gregor-cresnar -->
+                    <symbol id="icon-magnifier" viewBox="0 0 490.8 490.8">
+                        <title>magnifier</title>
+                        <path
+                            d="M364.8,299.55c46.3-75.8,36.9-176.3-28.6-241.9c-76.8-76.8-201.8-76.8-278.6,0s-76.8,201.8,0,278.5c65.5,65.5,166,74.9,241.9,28.6L412,477.25c18,18,47.3,18,65.3,0s18-47.3,0-65.3L364.8,299.55z M295.5,295.55c-54.4,54.4-142.8,54.4-197.1,0c-54.4-54.4-54.4-142.8,0-197.1c54.4-54.4,142.8-54.4,197.1,0C349.8,152.75,349.8,241.15,295.5,295.55z M220,171.95h59.4v45.3H220v59.4h-45.3v-59.4h-59.3v-45.3h59.4v-59.4h45.3v59.4H220z" />
+                    </symbol>
+                    </svg>
+                    <div class="main">
+                        <!-- <div class="space"></div> -->
+                        <div class="content2">
+                            <div class="grid2">
+                                <div class="grid__item2">
+                                    <div class="product2">
+                                        <div class="product__bg2"></div>
+                                        <img class="product__img2" src="./dist/1f2.png" alt="img 01" />
+                                        <h2 class="product__title2">Frame slideshow</h2>
+                                        <h3 class="product__subtitle2">Animated</h3>
+                                        <p class="product__description2">fully extar-ordinary slideshow transitions and animations, If this is something you might be interested in then be stanned as you check them out.</p>
+                                        <div class="product__price2">modern</div>
+                                    </div>
+                                </div>
+                                <div class="grid__item2">
+                                    <div class="product2">
+                                        <div class="product__bg2"></div>
+                                        <img class="product__img2" src="./dist/2f2.png" alt="img 02" />
+                                        <h2 class="product__title2">Scroll Reflection</h2>
+                                        <h3 class="product__subtitle2">mirror effect</h3>
+                                        <p class="product__description2">Do you like to have your text reflect on the top of the browser, then check out this new and incredible sample.
+                                        </p>
+                                        <div class="product__price2">retro</div>
+                                    </div>
+                                </div>
+                                <div class="grid__item2">
+                                    <div class="product2">
+                                        <div class="product__bg2"></div>
+                                        <img class="product__img2" src="./dist/3f2.png" alt="img 03" />
+                                        <h2 class="product__title2">Button Animation</h2>
+                                        <h3 class="product__subtitle2">reshaping buttons</h3>
+                                        <p class="product__description2">Glowing neon outlines, subtle geometric overlays, spinning gradients, expanding ripples, morphing shapes, pulsating shadows.
+                                        </p>
+                                        <div class="product__price2">retro</div>
+                                    </div>
+                                </div>
+                                <div class="grid__item2">
+                                    <div class="product2">
+                                        <div class="product__bg2"></div>
+                                        <img class="product__img2" src="./dist/4f2.png" alt="img 04" />
+                                        <h2 class="product__title2">Grid Loading</h2>
+                                        <h3 class="product__subtitle2">Animation</h3>
+                                        <p class="product__description2">view the latest and funkiest grid loading animations. the presets include.
+                                        </p>
+                                        <div class="product__price2">modern</div>
+                                    </div>
+                                </div>
+                                <div class="grid__item2">
+                                    <div class="product2">
+                                        <div class="product__bg2"></div>
+                                        <img class="product__img2" src="./dist/5f2.png" alt="img 05" />
+                                        <h2 class="product__title2">Infinite Menu</h2>
+                                        <h3 class="product__subtitle2">scroll animation</h3>
+                                        <p class="product__description2">have you ever thought of an effect on the menu that just keeps it scrolling. this preset adds animation to it.
+                                        </p>
+                                        <div class="product__price2">modern</div>
+                                    </div>
+                                </div>
+                                <div class="grid__item2">
+                                    <div class="product2">
+                                        <div class="product__bg2"></div>
+                                        <img class="product__img2" src="./dist/6f2.png" alt="img 05" />
+                                        <h2 class="product__title2">Sidebar-Transition</h2>
+                                        <h3 class="product__subtitle2">Animated</h3>
+                                        <p class="product__description2">Slide, push, reveal, scale, rotate, morph, 3D effects, parallax, subtle shadows, overlay gradients.
+                                        </p>
+                                        <div class="product__price2">modern</div>
+                                    </div>
+                                </div>
+                                <div class="grid__item2">
+                                    <div class="product2">
+                                        <div class="product__bg2"></div>
+                                        <img class="product__img2" src="./dist/7f2.png" alt="img 05" />
+                                        <h2 class="product__title2">Image to Grid</h2>
+                                        <h3 class="product__subtitle2">Animation</h3>
+                                        <p class="product__description2">As the name says, the image expands and animates to a grid display. simly stanning</p>
+                                        <div class="product__price2">retro</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+        </section>
+
+
+        <!-- <section class="v-section">
+            <div class="vid-box"></div>
+        </section> -->
+        <section class="c-section" data-scroll-section>
+            <div class="ol-container">
+                <div class="c-cta">
+                    <h1 class="o-title" data-scroll>
+                        <span class="o-title_line">
+                            <span>
+                                <p>If you </p>
+                            </span>
+                        </span>
+                        <span class="o-title_line">
+                            <span>
+                                <p>Like What</p>
+                            </span>
+                        </span>
+                        <span class="o-title_line u-white">
+                            <span>
+                                <p>You See</p>
+                            </span>
+                        </span>
+                    </h1>
+                    <hr class="c-cta_line" data-scroll data-scroll-offset="100" />
+
+                </div>
+        </section>
+
+        <div class="cursor">
+            <svg class="cursor__svg" width="80" height="80">
+                <circle vector-effect="non-scaling-stroke" class="cursor__svg-circle" cx="40" cy="40" r="20" /></svg>
+            <span class="cursor__text">
+            </span>
+        </div>
+
+
+    </div>
+
+    <script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js"
+        crossorigin="anonymous"></script>
+    <script nomodule
+        src="https://polyfill.io/v3/polyfill.min.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent%2Csmoothscroll"
+        crossorigin="anonymous"></script>
+
+    <script src="dist/scripts/main2.js"></script>
+    <script src="dist/scripts/index2.js"></script>
+    <script src="dist/scripts/gsap.min.js"></script>
+    <script src="dist/scripts/jquery.js"></script>
+    <script src="dist/scripts/anime.min.js"></script>
+        <script src="dist/scripts/jquery-ui.js"></script>
+        <script src="dist/scripts/script.js"></script>
+        <script src='dist/scripts/particles.min.js'></script>
+        <script src='dist/scripts/app.js'></script>
+    <script src="dist/scripts/anime.min.js"></script>
+    <script src="dist/scripts/imagesloaded.pkgd.min.js"></script>
+    <script src="dist/scripts/index.js"></script>
+    <script src="dist/scripts/index3.js"></script>
+</body>
+
+</html>

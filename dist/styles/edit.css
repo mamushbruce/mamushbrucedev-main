@@ -1,0 +1,165 @@
+
+
+.wrapping {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    inset: 0;
+    z-index: -999;
+}
+
+
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #000;
+    z-index: 1000;
+    transform-style: preserve-3d;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.box {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    transition: 1.5s;
+    transform: perspective(1000px) rotateY(0deg);
+}
+
+.box span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(300px);
+    -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
+}
+
+.box span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    user-select: none;
+}
+
+.btns {
+    position: absolute;
+    bottom: 100px;
+    display: flex;
+    gap: 30px;
+}
+
+.btns .bton {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btns .bton:active {
+    background: #fff;
+}
+
+.btns .bton::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-top: 3px solid #fff;
+    border-right: 3px solid #fff;
+    transform: rotate(45deg) translate(-2.5px, 2.5px);
+}
+
+.btns .bton.prev::before {
+    transform: rotate(225deg) translate(-2.5px, 2.5px);
+}
+
+.btns .bton:active::before {
+    border-top: 3px solid #000;
+    border-right: 3px solid #000;
+}
+
+
+
+
+.space {
+    height: 150vh;
+    width: 100vw;
+    background-color: transparent;
+    visibility: hidden;
+    /* z-index: -11; */
+    /* display: none;  */
+}
+
+.space2 {
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+    /* visibility: hidden; */
+    z-index: 1000;
+    /* display: none;  */
+}
+
+
+
+
+/* title section */
+
+.title {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 50%;
+    color: #fff;
+}
+
+.o-title_line {
+    width: 50%;
+    height: 20vh;
+}
+
+.o-title_line span p {
+    font-size: 11vh;
+    text-align: end;
+    margin-right: 50px;
+}
+
+.o-title_line span:nth-child(3) {
+    color: rgb(9, 206, 206);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
